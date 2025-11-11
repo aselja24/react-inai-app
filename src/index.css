@@ -79,7 +79,7 @@ body {
 
 
 /* MAIN PHOTO */
-header .presentation {
+.presentation {
   position: relative;
   margin: 15px 0;
   background: url('./img/bg.jpg') no-repeat;
@@ -282,4 +282,110 @@ header .presentation {
   max-width: 800px;
   text-align: left;
   padding-top: 20;
+}
+
+/* === REASONS SECTION === */
+.reasons {
+  padding: 80px 100px;
+  background: #f8f9fa;
+}
+
+.reasons__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 50px;
+  max-width: 1256px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.reasons__header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #141A51;
+  margin: 0;
+  flex: 0 0 500px;
+}
+
+.reasons__header p {
+  font-size: 16px;
+  color: #7E7E7E;
+  padding-top: 34px;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.reasons__cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1256px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.reason-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  max-width: 360px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.reason-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.reason-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 24px;
+  filter: brightness(0) saturate(100%) invert(36%) sepia(84%) saturate(748%) hue-rotate(171deg) brightness(94%) contrast(97%);
+  /* Цвет иконки — #3498db */
+}
+
+.reason-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #141A51;
+  margin-bottom: 16px;
+}
+
+.reason-card p {
+  font-size: 15px;
+  color: #7E7E7E;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.reason-arrow {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  background: #141A51;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.reason-arrow:hover {
+  background: #3498db;
 }

@@ -3,6 +3,7 @@ import photo_1 from '../img/blok_1_1.jpg'
 import photo_2 from '../img/blok_1_2.jpg'
 import React, { useEffect } from 'react';
 import Reasons from './Reasons';
+import { Link } from 'react-router-dom';
 
 
 export default function Header() {
@@ -47,6 +48,8 @@ export default function Header() {
           <img src={logo} alt="INAI UNI" className="nav-logo" />
 
           <ul className='nav'>
+            <li><Link to="/" style={{ color: '#141A51', textDecoration: 'none' }}>Главная</Link></li>
+            <li><Link to="/about" style={{ color: '#141A51', textDecoration: 'none' }}>О нас</Link></li>
             <li>Главная</li>
             <li>О нас</li>
             <li>Абитуриентам</li>
@@ -56,15 +59,6 @@ export default function Header() {
           </ul>
 
         </div>
-
-        <div className='presentation'> 
-          <div className='about-box'>
-            <h2>INAI: Создаем код будущего</h2>
-            <p>Кыргызско-Германский институт прикладной информатики (КГИПИ) – единственный вуз в образовательном секторе Кыргызстана, специализирующийся в области компьютерных наук.</p>
-            <button>Узнать больше</button>
-          </div>
-        </div>
-
     </header>
   )
 }

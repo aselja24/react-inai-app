@@ -1,12 +1,12 @@
-import React from 'react'
-// import { ways } from '..data'
+import React from 'react';
 
-export default function Reason(props) {
+export default function Reason({ icon, title, description }) {
   return (
-    <div>
-      {/* <img src={icon_1} alt="icon_1" className="icon_1"></img> */}
-      <h2>{props.title}</h2>
-      <p>{props.description}</p>
+    <div className="reason-card">
+      <img src={icon} alt={title} className="reason-icon" />
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <button className="reason-arrow">→</button>
     </div>
-  )
+  );
 }
